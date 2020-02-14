@@ -4,10 +4,13 @@ Minha implementação de algumas funções da Biblioteca padrão C incluindo alg
 - [Libft](#libft)
 - [O que é o Libft?](#o-que---o-libft-)
 - [O que está no Libft?](#o-que-est--no-libft)
+- [Como funciona?](#como-funciona-)
 
 <a name="o-que---o-libft-"></a>
 ### O que é o Libft?
 Libft é um projeto da [42](https://www.42sp.org.br "42sp") em que temos que recriar algumas funções da Biblioteca padrão C incluindo algumas adicionais que vão ser usadas para construir uma Biblioteca de funções úteis que serão usadas pelo resto do programa.
+
+Refazemos as funções para que tenhamos um conhecimento aprofundado das estruturas e dos algoritimos básicos. Na 42 **não nos é permitido** usar a maioria das funções e Bibliotecas em nossos projetos. Por isso, com o passar do tempo vamos alimentando a nossa Biblioteca para que ela atenda a nossas nescessidades.
 
 <a name="o-que-est--no-libft"></a>
 ### O que está no Libft?
@@ -44,4 +47,17 @@ ft_tolower  |
 ft_calloc   |
 ft_strdup   |
 
-Atenção: Refazemos as funções para que tenhamos um conhecimento aprofundado das estruturas e dos algoritimos básicos. Na 42 **não nos é permitido** usar a maioria das funções e Bibliotecas em nossos projetos. Por isso, com o passar do tempo vamos alimentando essa nossa Biblioteca
+<a name="como-funciona-"></a>
+### Como funciona?
+O objetivo é criar uma arquvivo chamado **libft.a** para que eu possa usar a Biblioteca em projetos futuros.
+
+Para criar essa Biblioteca, usamos um artificio que é o Makefile. Com ele podemos predefinir comandos que facilitam na hora da compilação.
+
+Para testar, primeiro deve baixar o repositório:
+
+    git clone https://github.com/fecoelho/Libft.git
+
+Depois, é preciso entrar na pasta do projeto e usar os comandos do Make para compilar. A primeira vez deverá usar o Make copy.
+
+    cd Libft
+    Make copy
