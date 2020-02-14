@@ -6,7 +6,7 @@
 #    By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/10 13:30:39 by fcoelho           #+#    #+#              #
-#    Updated: 2020/02/14 10:45:44 by fcoelho          ###   ########.fr        #
+#    Updated: 2020/02/14 11:00:59 by fcoelho          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,6 +77,9 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
+
+hclean: clear
+	rm -f $(SRCS)
 
 re: fclean all
 
