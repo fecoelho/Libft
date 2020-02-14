@@ -3,7 +3,7 @@ Minha implementação de algumas funções da Biblioteca padrão C incluindo alg
 
 - [Libft](#libft)
 - [Toc](#toc)
-- [O que é o Libft?](#o-que---o-libft-)
+- [O que é o Libft?](###o-que---o-libft-)
 * Como vai
 * teste
 * teste
