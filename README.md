@@ -18,7 +18,7 @@ Como pode ver nas [Instruções do Projeto], temos:
 3. **Bonus Functions** Funções que a 42 julga ser útil para manipulação de listas estruturadas.
 
 Part1 | Part2 | Bonus
-:----|:----:|----:
+:----:|:----:|:----:
 ft_memset   | ft_substr     | ft_lstnew
 ft_bzero    | ft_strjoin    | ft_lstadd_back
 ft_memcpy   | ft_strtrim    | ft_lstsize
@@ -43,3 +43,5 @@ ft_toupper  |
 ft_tolower  |
 ft_calloc   |
 ft_strdup   |
+
+Atenção: Refazemos as funções para que tenhamos um conhecimento aprofundado das estruturas e dos algoritimos básicos. Na 42 **não nos é permitido** usar a maioria das funções e Bibliotecas em nossos projetos. Por isso, com o passar do tempo vamos alimentando essa nossa Biblioteca
