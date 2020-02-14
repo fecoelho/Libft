@@ -19,16 +19,16 @@ Como pode ver nas [Instruções do Projeto], temos:
 
 Part1 | Part2 | Bonus
 :----|:----:|----:
-ft_memset   |
-ft_bzero    |
-ft_memcpy   |
-ft_memccpy  |
-ft_memmove  |
-ft_memchr   |
-ft_memcmp   |
-ft_strlen   |
-ft_strlcpy  |
-ft_strlcat  |
+ft_memset   | ft_substr     |
+ft_bzero    | ft_strjoin    |
+ft_memcpy   | ft_strtrim    |
+ft_memccpy  | ft_split      |
+ft_memmove  | ft_itoa       |
+ft_memchr   | ft_strmapi    |
+ft_memcmp   | ft_putchar_fd |
+ft_strlen   | ft_putendl_fd |
+ft_strlcpy  | ft_putnbr_fd  |
+ft_strlcat  | 
 ft_strchr   |
 ft_strrchr  |
 ft_strnstr  |
