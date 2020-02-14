@@ -53,4 +53,11 @@ O objetivo é criar uma arquvivo chamado **libft.a** para que eu possa usar a Bi
 
 Para criar essa Biblioteca, usamos um artificio que é o Makefile. Com ele podemos predefinir comandos que facilitam na hora da compilação.
 
-Para testar, primeiro deve baixar o repositório
+Para testar, primeiro deve baixar o repositório:
+
+    git clone https://github.com/fecoelho/Libft.git
+
+Depois, é preciso entrar na pasta do projeto e usar os comandos do Make para compilar. A primeira vez deverá usar o Make copy.
+
+    cd Libft
+    Make copy
