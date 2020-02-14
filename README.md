@@ -2,7 +2,7 @@
 Minha implementação de algumas funções da Biblioteca padrão C incluindo algumas adicionais.
 
 ### Toc
-* [O que é o Libft?](#o-que---o-libft)
+* [O que é o Libft?](#o-que---o-libft-)
 * Shazam
 * alo
 * Como vai
