@@ -6,9 +6,13 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/06 18:00:46 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/10 13:32:37 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 02:41:29 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Retorna o último elemento da lista.
+*/
 
 #include "libft.h"
 

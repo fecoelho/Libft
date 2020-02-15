@@ -6,9 +6,13 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/06 15:59:26 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/10 13:33:01 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 02:37:22 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Adiciona um novo elemento na lista.
+*/
 
 #include "libft.h"
 
