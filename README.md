@@ -69,5 +69,5 @@ Caso queira retirar os arquivos .c e .o, basta usar o comando Make hclean:
 
     Make hclean
 
-<a name = "disclaimer"><\a>
+<a name = "disclaimer">
 **DISCLAIMER:** No projeto original, somos obrigados a enviar todos os arquivos na raiz do diretório e separar as funções bônus das obrigatórias na hora de compilar com o Make. Para uma melhor organização desse repositório e melhor entendimento, separei as funções em pastas, cada uma em sua respectiva pasta. Também compilo todas as funções juntas para que não seja necessário duas compilações.
