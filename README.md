@@ -21,7 +21,7 @@ Como pode ver nas [Instruções do Projeto], temos:
 2. **Part2 Functions:** Funções que a 42 julga útil para futuros projetos que não estão na Biblioteca por padão ou que estão de outro modo.
 3. **Bonus Functions** Funções que a 42 julga ser útil para manipulação de listas estruturadas.
 
-Part1 | Part2 | Bonus
+[Part1](https://github.com/fecoelho/Libft/tree/master/Part1 "Part1") | [Part2](https://github.com/fecoelho/Libft/tree/master/Part2) | [Bonus](https://github.com/fecoelho/Libft/tree/master/Bonus)
 :----:|:----:|:----:
 ft_memset   | ft_substr     | ft_lstnew
 ft_bzero    | ft_strjoin    | ft_lstadd_back
@@ -72,4 +72,4 @@ Caso queira retirar os arquivos .c e .o, basta usar o comando Make hclean:
 
 <a name = "disclaimer"></a>
 ###### DISCLAIMER:
-No projeto original, somos obrigados a enviar todos os arquivos na raiz do diretório e separar as funções bônus das obrigatórias na hora de compilar com o Make. Para uma melhor organização desse repositório e melhor entendimento, separei as funções em pastas, cada uma em sua respectiva pasta. Também compilo todas as funções juntas para que não seja necessário duas compilações.
+No [projeto original](https://github.com/fecoelho/Libft/blob/master/libft.subject.pdf "subject"), somos obrigados a enviar todos os arquivos na raiz do diretório e separar as funções bônus das obrigatórias na hora de compilar com o Make. Para uma melhor organização desse repositório e melhor entendimento, separei as funções em pastas, cada uma em sua respectiva pasta. Também compilo todas as funções juntas para que não seja necessário duas compilações.
