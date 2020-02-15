@@ -1,7 +1,6 @@
 # Libft
 Minha implementação de algumas funções da Biblioteca padrão C incluindo algumas adicionais.
 
-- [Libft](#libft)
 - [O que é o Libft?](#o-que---o-libft-)
 - [O que está no Libft?](#o-que-est--no-libft)
 - [Como funciona?](#como-funciona-)
@@ -57,7 +56,7 @@ Para testar, primeiro deve baixar o repositório:
 
     git clone https://github.com/fecoelho/Libft.git
 
-Depois, é preciso entrar na pasta do projeto e usar os comandos do Make para compilar. A primeira vez deverá usar o Make copy.
+Depois, é preciso entrar na pasta do projeto e usar os comandos do Make para compilar.
 
     cd Libft
     Make copy
