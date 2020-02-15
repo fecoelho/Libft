@@ -6,9 +6,14 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 20:52:49 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/10 13:34:21 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 01:41:53 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Copia o conteudo da string src para a string dst. A quantidade copiada é
+** definida pela variável n.
+*/
 
 #include "libft.h"
 

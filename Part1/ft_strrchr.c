@@ -6,9 +6,14 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 06:03:32 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/01/25 06:15:37 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 01:59:47 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Igual a função ft_strchr mas invés de procurar a primeira ocorrência do
+** caracter, procura pela última.
+*/
 
 #include "libft.h"
 

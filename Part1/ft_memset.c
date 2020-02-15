@@ -6,9 +6,14 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 18:37:51 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/14 11:06:59 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 01:36:58 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Coloca na string um caracter qualquer especificado pela variavel c. A
+** quantidade de caracteres colocados é definida pela variável len.
+*/
 
 #include "libft.h"
 

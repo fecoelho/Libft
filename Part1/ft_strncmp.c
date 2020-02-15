@@ -6,9 +6,15 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 05:37:26 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/01/25 05:53:02 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 02:06:55 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Compara a string s1 com a string s2. Caso tenha alguma diferenã retorna
+** a subtração dos valores dos caracteres. Caso sejam totalmente iguais retorna
+** NULL.
+*/
 
 #include "libft.h"
 

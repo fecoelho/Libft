@@ -6,9 +6,13 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 19:24:19 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/01/29 21:14:18 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 01:50:03 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Conta quantos caracteres há na string str.
+*/
 
 #include "libft.h"
 

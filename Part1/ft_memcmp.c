@@ -6,9 +6,15 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 05:15:35 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/10 13:33:51 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 01:49:22 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Compara a string s1 com a s2. A quantidade de caracteres comparados é
+** definida pela variável n. Retorna a diferença da subtração entre o valor dos
+** caracteres das duas strings. Retorna zero caso não haja diferença.
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,14 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 03:40:23 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/10 13:31:02 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 02:08:20 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Transforma os números contigos em uma string para números de propriedade INT
+** O nome é a abreviação de Ascii TO Integer.
+*/
 
 #include "libft.h"
 

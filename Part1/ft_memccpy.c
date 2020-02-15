@@ -6,9 +6,16 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 02:30:50 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/10 13:33:23 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 01:41:47 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Parecida com a ft_memcpy. Também copia o conteúdo do da string src para a
+** string dst e a quantidade copiada também é definida pela variável n.
+** Entretanto, se for encontrado o caracter que está na variável c a função
+** para de copiar.
+*/
 
 #include "libft.h"
 

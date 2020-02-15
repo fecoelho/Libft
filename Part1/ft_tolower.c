@@ -6,9 +6,14 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 18:36:36 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/01/25 02:42:54 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 02:14:01 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Transforma o caracter contido na variável c em minúsculo caso o caracter
+** seja maiúsculo.
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,14 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 06:15:47 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/01/29 21:35:14 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 02:16:40 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Aloca memória no tamanho da string recebida s1. Coloca a string na memória
+** alocada.
+*/
 
 #include "libft.h"
 

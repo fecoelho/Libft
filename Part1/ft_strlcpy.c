@@ -6,9 +6,15 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 07:21:04 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/01/25 07:21:11 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 01:53:37 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Copia a string src na string dst. O tamanho total da string final é definida
+** pela variável dstsize.
+** É uma versão mais segura e eficiente das funções strcpy e strncpy.
+*/
 
 #include "libft.h"
 

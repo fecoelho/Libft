@@ -6,9 +6,13 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 04:59:55 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/10 13:28:29 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 02:09:53 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Verifica se o caracter contido na variavel c é um digito.
+*/
 
 #include "libft.h"
 
