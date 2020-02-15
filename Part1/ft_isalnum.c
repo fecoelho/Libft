@@ -6,9 +6,13 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 04:46:43 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/10 13:30:14 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 02:48:29 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Verifica se o caracter contido na variavel c é alfanumérico.
+*/
 
 #include "libft.h"
 
