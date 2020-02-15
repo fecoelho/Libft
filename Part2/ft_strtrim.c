@@ -6,9 +6,14 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/29 21:19:50 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/01/29 21:26:25 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 02:24:09 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Retorna uma cópia da string s1 porém com os caracteres iguais ao caracter
+** da variavel set removidos do começo e do final.
+*/
 
 #include "libft.h"
 

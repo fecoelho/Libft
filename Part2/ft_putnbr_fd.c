@@ -6,9 +6,14 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 19:14:14 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/01/27 21:20:44 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 02:33:22 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Escreve um número que esteja em uma variável de propriedade INT. É necessário 
+** também que seja dado o tipo de Output desejado.
+*/
 
 #include "libft.h"
 

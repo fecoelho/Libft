@@ -6,9 +6,14 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/29 21:28:32 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/10 15:14:30 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 02:26:28 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Faz uma array de strings cortando a string principal. A string é separa em
+** um tamnho defiido pelo caracter contido na variavel c da função principal.
+*/
 
 #include "libft.h"
 

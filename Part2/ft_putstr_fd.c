@@ -6,9 +6,13 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 19:03:24 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/01/27 20:39:01 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 02:31:17 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Escreve a string s. É necessário também que seja dado o tipo de Output desejado.
+*/
 
 #include "libft.h"
 

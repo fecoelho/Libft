@@ -6,9 +6,13 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/29 21:31:35 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/01/29 21:38:50 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 02:28:49 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Aplica a função f (recebida pela função) a todos os caracteres da string.
+*/
 
 #include "libft.h"
 

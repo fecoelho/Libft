@@ -6,9 +6,15 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 20:49:51 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/10 13:29:47 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 02:27:58 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Transforma os números contigos em uma variável de propriedade INT 
+** para uma string.
+** O nome é a abreviação de Integer TO ASCII.
+*/
 
 #include "libft.h"
 

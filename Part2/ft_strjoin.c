@@ -6,9 +6,14 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/29 21:17:53 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/01/29 21:17:57 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/15 02:22:34 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Aloca memória no tamanho das strings s1 e s2 e concatena as duas strings em
+** uma nova.
+*/
 
 #include "libft.h"
 
