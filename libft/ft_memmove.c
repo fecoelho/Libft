@@ -6,13 +6,13 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 21:20:35 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/15 01:42:54 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/20 19:25:28 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* 
+/*
 ** É uma versão mais segura da ft_memcpy.
 */
 

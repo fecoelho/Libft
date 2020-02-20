@@ -6,12 +6,12 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 05:02:57 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/15 02:11:12 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/20 19:23:23 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** Verifica se o caracter contido na variavel c é um caracter imprimível da 
+** Verifica se o caracter contido na variavel c é um caracter imprimível da
 ** tabela ASCII padrão.
 */
 

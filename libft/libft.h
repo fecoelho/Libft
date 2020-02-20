@@ -6,7 +6,7 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 21:26:08 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/20 18:13:27 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/20 19:30:46 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,8 +68,8 @@ void			ft_lstclear(t_list **lst, void (*del)(void*));
 void			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 		void (*del)(void *));
-int     		ft_isblank(int c);
-int     		ft_iscntrl(int c);
+int				ft_isblank(int c);
+int				ft_iscntrl(int c);
 int				ft_isgraph(int c);
 int				ft_islower(int c);
 int				ft_isspace(int c);

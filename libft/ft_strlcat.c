@@ -6,12 +6,12 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 03:02:17 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/15 01:55:54 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/20 19:30:22 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** Concatena a string src com a string dst. O tamnho final de dst é definido 
+** Concatena a string src com a string dst. O tamnho final de dst é definido
 ** pela variável size.
 ** É uam versão mais segura e eficiente das funções strcar e strncat.
 */

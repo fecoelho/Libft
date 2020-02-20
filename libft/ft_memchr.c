@@ -6,12 +6,12 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 21:46:08 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/15 01:47:06 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/20 19:23:50 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** Procura na string s o caracter contido na variavel c. A quantidade de 
+** Procura na string s o caracter contido na variavel c. A quantidade de
 ** caracteres que serão comparados da string s é definida pela variável n.
 ** Para de procurar também quando acha ou quando chega ao fim da string.
 ** Retorna NULL se não for encontrado o caracter.

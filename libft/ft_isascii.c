@@ -6,12 +6,12 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 04:57:46 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/15 02:10:26 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/20 19:23:03 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** Verifica se o caracter contido na variavel c é um valor da tabela ASCII 
+** Verifica se o caracter contido na variavel c é um valor da tabela ASCII
 ** padrão.
 */
 

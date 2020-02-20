@@ -6,12 +6,12 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 20:32:31 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/15 02:32:14 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/20 19:25:47 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** Escreve a string s e adiciona uma quebra de linha ao final. É necessário 
+** Escreve a string s e adiciona uma quebra de linha ao final. É necessário
 ** também que seja dado o tipo de Output desejado.
 */
 

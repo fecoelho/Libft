@@ -6,15 +6,16 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/20 17:26:50 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/20 17:28:58 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/20 19:28:20 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_str_is_lowercase(char *str)
+int		ft_str_is_lowercase(char *str)
 {
 	int i;
+
 	i = 0;
 	while (str[i] != '\0')
 	{
