@@ -3,6 +3,9 @@
 CMakeLists.txt
 cmake-build-debug/
 
+# Tester
+Libftest
+
 # VIM
 *.swp
 
