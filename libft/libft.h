@@ -6,7 +6,7 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 21:26:08 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/20 19:30:46 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/20 20:37:43 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,5 +87,6 @@ int				ft_str_is_uppercase(char *str);
 int				ft_str_is_numeric(char *str);
 int				ft_str_is_printable(char *str);
 char			*ft_strcapitalize(char *str);
+char			*ft_strlowcase(char *str);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/10 13:30:39 by fcoelho           #+#    #+#              #
-#    Updated: 2020/02/20 18:13:17 by fcoelho          ###   ########.fr        #
+#    Updated: 2020/02/20 20:37:46 by fcoelho          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,8 @@ SRCS=ft_bzero.c ft_memmove.c ft_strlen.c ft_strlcat.c ft_strlcpy.c \
 	 ft_isblank.c ft_iscntrl.c ft_isgraph.c ft_islower.c ft_isspace.c \
 	 ft_isupper.c ft_isxdigit.c ft_memalloc.c ft_memdel.c ft_putchar.c \
 	 ft_putendl.c ft_putstr.c ft_putnbr.c ft_str_is_alpha.c ft_str_is_lowercase.c \
-	 ft_str_is_uppercase.c ft_str_is_numeric.c ft_str_is_printable.c ft_strcapitalize.c\
+	 ft_str_is_uppercase.c ft_str_is_numeric.c ft_str_is_printable.c ft_strcapitalize.c \
+	 ft_strlowcase.c
 
 OBJECTS= $(SRCS:.c=.o)
 

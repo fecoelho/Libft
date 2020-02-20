@@ -5,34 +5,53 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/20 17:38:07 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/20 19:29:53 by fcoelho          ###   ########.fr       */
+/*   Created: 2020/02/20 19:33:01 by fcoelho           #+#    #+#             */
+/*   Updated: 2020/02/20 20:37:48 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcapitalize(char *str)
-{
-	int		i;
-	int		is_start;
+static char		*auxilial(char *str);
 
-	i = 0;
-	is_start = 1;
+int		g_i;
+
+char		*ft_strcapitalize(char *str)
+{
+	g_i = 0;
 	ft_strlowcase(str);
-	while (str[i] != '\0')
+	while (str[g_i] != '\0')
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
+		while (str[g_i] <= 'a' && str[g_i] >= 'z')
+			g_i++;
+		if ((str[g_i] >= 'a' && str[g_i] <= 'z'))
 		{
-			if (is_start == 1)
-				str[i] = str[i] - 32;
-			is_start = 0;
+			str[g_i] -= 32;
+			while (str[g_i] != ' ')
+			{
+				if (str[g_i] == '\n')
+					break ;
+				else if (str[g_i] == '-' || str[g_i] == '+')
+					break ;
+				g_i++;
+			}
 		}
-		else if (str[i] >= '0' && str[i] <= '9')
-			is_start = 0;
-		else
-			is_start = 1;
-		i++;
+		else if (str[g_i] >= '0' && str[g_i] <= '9')
+			auxilial(str);
+		g_i++;
+	}
+	return (str);
+}
+
+static char	*auxilial(char *str)
+{
+	while (str[g_i] != ' ')
+	{
+		if (str[g_i] == '\n')
+			break ;
+		else if (str[g_i] == '-' || str[g_i] == '+')
+			break ;
+		g_i++;
 	}
 	return (str);
 }
