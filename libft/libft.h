@@ -6,7 +6,7 @@
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 21:26:08 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/10 13:21:18 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/02/20 17:39:24 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,24 @@ void			ft_lstclear(t_list **lst, void (*del)(void*));
 void			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 		void (*del)(void *));
+int     		ft_isblank(int c);
+int     		ft_iscntrl(int c);
+int				ft_isgraph(int c);
+int				ft_islower(int c);
+int				ft_isspace(int c);
+int				ft_isupper(int c);
+int				ft_isxdigit(int c);
+void			*ft_memalloc(size_t size);
+void			ft_memdel(void **ap);
+void			ft_putchar(int c);
+void			ft_putstr(char *str);
+void			ft_putendl(char *str);
+void			ft_putnbr(int n);
+int				ft_str_is_alpha(char *str);
+int				ft_str_is_lowercase(char *str);
+int				ft_str_is_uppercase(char *str);
+int				ft_str_is_numeric(char *str);
+int				ft_str_is_printable(char *str);
+char			*ft_strcapitalize(char *str);
 
 #endif

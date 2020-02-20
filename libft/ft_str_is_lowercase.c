@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/25 04:46:43 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/15 02:48:29 by fcoelho          ###   ########.fr       */
+/*   Created: 2020/02/20 17:26:50 by fcoelho           #+#    #+#             */
+/*   Updated: 2020/02/20 17:28:58 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Verifica se o caracter contido na variavel c é alfanumérico.
-*/
-
 #include "libft.h"
 
-int		ft_isalnum(int c)
+int     ft_str_is_lowercase(char *str)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') ||
-			(c >= '0' && c <= '9'))
-		return (1);
-	return (0);
+	int i;
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] < 'a' || str[i] > 'z')
+			return (0);
+		i++;
+	}
+	return (1);
 }

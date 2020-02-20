@@ -1,34 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_memalloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/27 19:14:14 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/15 02:33:22 by fcoelho          ###   ########.fr       */
+/*   Created: 2020/02/20 16:30:08 by fcoelho           #+#    #+#             */
+/*   Updated: 2020/02/20 16:45:20 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Escreve um número que esteja em uma variável de propriedade INT. É necessário 
-** também que seja dado o tipo de Output desejado.
-*/
-
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+void	*ft_memalloc(size_t size)
 {
-	unsigned int	num;
+	void	*mem;
 
-	if (n < 0)
-	{
-		ft_putchar_fd('-', fd);
-		num = (unsigned int)(n * -1);
-	}
-	else
-		num = (unsigned int)n;
-	if (num > 10)
-		ft_putnbr_fd(num / 10, fd);
-	ft_putchar_fd((char)(num % 10 + 48), fd);
+	if (!(mem = malloc(size)))
+		return (NULL);
+	ft_bzero(mem, size);
+	return (mem);
 }
