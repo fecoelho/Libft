@@ -36,7 +36,7 @@ INCLUDES=./
 
 all: $(NAME)
 
-$(NAME): $(SRCS) libft.h get_next_line.h
+$(NAME): $(SRCS) libft.h
 	gcc -Wall -Wextra -Werror -I $(INCLUDES) -c $(SRCS)
 	ar rc $(NAME) $(OBJECTS)
 	ranlib $(NAME)
