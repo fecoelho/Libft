@@ -20,7 +20,9 @@ SRCS=ft_bzero.c ft_memmove.c ft_strlen.c ft_strlcat.c ft_strlcpy.c \
 	 ft_strtrim.c ft_putchar_fd.c ft_putstr_fd.c ft_itoa.c ft_putnbr_fd.c \
 	 ft_putendl_fd.c ft_strmapi.c ft_split.c ft_lstnew.c ft_lstadd_front.c \
 	 ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c \
-	 ft_lstiter.c ft_lstmap.c \
+	 ft_lstiter.c ft_lstmap.c ft_array_char.c ft_lenght_nbr.c ft_list_find_bonus.c \
+	 ft_list_remove_if.c ft_list_remove_one_if.c ft_occurance.c ft_strcmp.c ft_strcpy.c \
+	 ft_strstr.c get_next_line.c \
 	 ft_isblank.c ft_iscntrl.c ft_isgraph.c ft_islower.c ft_isspace.c \
 	 ft_isupper.c ft_isxdigit.c ft_memalloc.c ft_memdel.c ft_putchar.c \
 	 ft_putendl.c ft_putstr.c ft_putnbr.c ft_str_is_alpha.c ft_str_is_lowercase.c \
@@ -34,7 +36,7 @@ INCLUDES=./
 
 all: $(NAME)
 
-$(NAME): $(SRCS) libft.h
+$(NAME): $(SRCS) libft.h get_next_line.h
 	gcc -Wall -Wextra -Werror -I $(INCLUDES) -c $(SRCS)
 	ar rc $(NAME) $(OBJECTS)
 	ranlib $(NAME)
