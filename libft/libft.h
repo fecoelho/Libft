@@ -12,12 +12,17 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define BUFFER_SIZE 1
 
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
 # include <ctype.h>
+# include <sys/types.h>
+# include <sys/uio.h>
+# include <fcntl.h>
+# include <stdio.h>
 
 typedef	struct	s_list
 {
