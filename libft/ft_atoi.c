@@ -3,17 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: fcoelho <fcoelho@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/25 03:40:23 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/15 02:30:23 by fcoelho          ###   ########.fr       */
+/*   Created: 2020/08/05 15:35:45 by fcoelho           #+#    #+#             */
+/*   Updated: 2020/08/05 15:35:48 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** Transforma os números contigos em uma string para números de propriedade INT
-** O nome é a abreviação de Ascii TO Integer.
-*/
 
 #include "libft.h"
 

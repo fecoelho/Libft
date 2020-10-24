@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_print_percent.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: fcoelho <fcoelho@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/20 19:39:20 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/20 19:43:56 by fcoelho          ###   ########.fr       */
+/*   Created: 2020/08/07 22:39:54 by fcoelho           #+#    #+#             */
+/*   Updated: 2020/08/07 22:41:02 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strlowcase(char *str)
+int			ft_print_percent(t_flags flags)
 {
-	int i;
+	int		count;
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-			str[i] += 32;
-		i++;
-	}
-	return (str);
+	count = 0;
+	if (flags.minus == 1)
+		count += ft_putlstr("%", 1);
+	count += ft_print_width(flags.width, 1, flags.zero);
+	if (flags.minus == 0)
+		count += ft_putlstr("%", 1);
+	return (count);
 }

@@ -3,17 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: fcoelho <fcoelho@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/22 18:36:36 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/15 02:14:01 by fcoelho          ###   ########.fr       */
+/*   Created: 2020/08/05 15:33:33 by fcoelho           #+#    #+#             */
+/*   Updated: 2020/08/05 15:35:13 by felipe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** Transforma o caracter contido na variável c em minúsculo caso o caracter
-** seja maiúsculo.
-*/
 
 #include "libft.h"
 

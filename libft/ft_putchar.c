@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fcoelho <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: fcoelho <fcoelho@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/20 17:00:47 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/02/20 17:04:11 by fcoelho          ###   ########.fr       */
+/*   Updated: 2020/08/07 22:56:20 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar(int c)
+int	ft_putchar(const char c)
 {
 	write(1, &c, 1);
+	return (1);
 }

@@ -1,22 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_putlstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fcoelho <fcoelho@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/20 17:05:38 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/08/07 23:06:49 by fcoelho          ###   ########.fr       */
+/*   Created: 2020/08/05 15:09:30 by fcoelho           #+#    #+#             */
+/*   Updated: 2020/08/05 15:35:13 by felipe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(const char *str)
+int			ft_putlstr(char *str, int len)
 {
 	int i;
 
 	i = 0;
-	while (str[i] != '\0')
-		ft_putchar(str[i++]);
+	while (str[i] != '\0' && i < len)
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+	return (i);
 }

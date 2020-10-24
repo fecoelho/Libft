@@ -14,6 +14,7 @@
 # define LIBFT_H
 # define BUFFER_SIZE 1
 
+# include <stdarg.h>
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
@@ -23,6 +24,16 @@
 # include <sys/uio.h>
 # include <fcntl.h>
 # include <stdio.h>
+
+typedef struct  s_flags
+{
+        int                     minus;
+        int                     zero;
+        int                     dot;
+        int                     star;
+        int                     type;
+        int                     width;
+}                               t_flags;
 
 typedef	struct	s_list
 {
@@ -74,13 +85,11 @@ void			ft_memdel(void **ap);
 void			*ft_memmove(void *dst, const void *src, size_t len);
 void			*ft_memset(void *str, int c, size_t len);
 int				ft_occurance(char *s1, char *s2);
-void			ft_putchar(int c);
-void			ft_putchar_fd(char c, int fd);
+int			ft_putchar_fd(char c, int fd);
 void			ft_putendl(char *str);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr(int n);
 void			ft_putnbr_fd(int n, int fd);
-void			ft_putstr(char *str);
 void			ft_putstr_fd(char *s, int fd);
 char			**ft_split(char const *s, char c);
 int				ft_str_is_alpha(char *str);
@@ -96,7 +105,6 @@ char			*ft_strdup(const char *s1);
 char			*ft_strjoin(char const *s1, char const *s2);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
-int				ft_strlen(const char *str);
 char			*ft_strlowcase(char *str);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
@@ -108,5 +116,42 @@ char			*ft_substr(char const *s, unsigned int start, size_t len);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
 int				get_next_line(int fd, char **line);
+int                             ft_printf(const char *format, ...);
+int                             ft_handler(int c, t_flags flags, va_list args);
+int                             ft_print_c(char c, t_flags flags);
+int                             ft_print_di(int c, t_flags flags);
+int                             ft_print_s(char *c, t_flags flags);
+int                             ft_print_p(size_t num, t_flags flags);
+int                             ft_print_u(unsigned int num, t_flags flags);
+int                             ft_print_x(unsigned int num, int lowcase, t_flags flags);
+int                             ft_print_percent(t_flags flags);
+int                             ft_print_width(int width, int minus, int zero);
+int                             ft_isconversion(int c);
+int                             ft_isflags(int c);
+t_flags                 ft_width_flags(va_list args, t_flags flags);
+int                             ft_dot_flags(const char *str, int start, va_list args,
+                                        t_flags *flags);
+t_flags                 ft_minus_flags(t_flags flags);
+t_flags                 ft_isdigit_flags(char c, t_flags flags);
+//static char             *ft_base(size_t nbr, int base, int count, char *str);
+char                    *ft_itoa_u(unsigned int n);
+int                     ft_putlstr(char *str, int len);
+size_t  ft_strlen(const char *s);
+
+char                    *ft_strdup(const char *src);
+char                    *ft_strnew(size_t size);
+int                             ft_isdigit(int c);
+int                             ft_putchar(const char c);
+int                             ft_tolower(int c);
+char                    *ft_str_lowcase(char *str);
+int                             ft_putlstr(char *str, int len);
+size_t                  ft_strlen(const char *s);
+char                    *ft_itoa_base(size_t nbr, int base);
+char                    *ft_itoa(int n);
+char                    *ft_itoa_u(unsigned int num);
+void                    ft_putstr(const char *s);
+int                             ft_isspace(int c);
+
+
 
 #endif

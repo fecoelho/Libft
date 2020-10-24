@@ -1,22 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_itoa_u.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fcoelho <fcoelho@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/20 17:05:38 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/08/07 23:06:49 by fcoelho          ###   ########.fr       */
+/*   Created: 2020/08/07 22:48:35 by fcoelho           #+#    #+#             */
+/*   Updated: 2020/08/07 22:48:39 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(const char *str)
+char			*ft_itoa_u(unsigned int n)
 {
-	int i;
+	int					len;
+	char				*str;
+	unsigned int		num;
 
-	i = 0;
-	while (str[i] != '\0')
-		ft_putchar(str[i++]);
+	len = n == 0 ? 1 : 0;
+	num = n;
+	while (num)
+	{
+		num /= 10;
+		len++;
+	}
+	str = (char*)malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (NULL);
+	str[len] = '\0';
+	len--;
+	while (len >= 0)
+	{
+		str[len] = (n % 10) + '0';
+		n /= 10;
+		len--;
+	}
+	return (str);
 }

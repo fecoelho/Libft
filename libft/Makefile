@@ -27,7 +27,12 @@ SRCS=ft_bzero.c ft_memmove.c ft_strlen.c ft_strlcat.c ft_strlcpy.c \
 	 ft_isupper.c ft_isxdigit.c ft_memalloc.c ft_memdel.c ft_putchar.c \
 	 ft_putendl.c ft_putstr.c ft_putnbr.c ft_str_is_alpha.c ft_str_is_lowercase.c \
 	 ft_str_is_uppercase.c ft_str_is_numeric.c ft_str_is_printable.c ft_strcapitalize.c \
-	 ft_strlowcase.c
+	 ft_str_lowcase.c ft_printf.c ft_handler.c ft_print_c.c \
+	 ft_print_width.c ft_flags.c ft_print_s.c \
+	 ft_print_di.c ft_print_p.c ft_print_u.c \
+	 ft_print_x.c ft_print_percent.c ft_itoa_base.c \
+	 ft_itoa_u.c ft_putlstr.c ft_strnew.c 
+
 
 OBJECTS= $(SRCS:.c=.o)
 

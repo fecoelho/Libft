@@ -1,22 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_print_width.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fcoelho <fcoelho@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/20 17:05:38 by fcoelho           #+#    #+#             */
-/*   Updated: 2020/08/07 23:06:49 by fcoelho          ###   ########.fr       */
+/*   Created: 2020/08/07 22:44:56 by fcoelho           #+#    #+#             */
+/*   Updated: 2020/08/07 22:45:28 by fcoelho          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(const char *str)
+int		ft_print_width(int width, int minus, int zero)
 {
-	int i;
+	int		count;
 
-	i = 0;
-	while (str[i] != '\0')
-		ft_putchar(str[i++]);
+	count = 0;
+	while (width > minus)
+	{
+		if (zero)
+			ft_putchar('0');
+		else
+			ft_putchar(' ');
+		width--;
+		count++;
+	}
+	return (count);
 }
