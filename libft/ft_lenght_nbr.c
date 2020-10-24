@@ -1,21 +1,18 @@
-//
-// Created by fecoe on 23/10/2020.
-//
 
 #include "libft.h"
 
-int		ft_lenght_nbr(int nb)
+int	ft_lenght_nbr(int nb)
 {
-    int	size_nb;
-    int	result;
+	int	size_nb;
+	int	result;
 
-    result = 1;
-    size_nb = 0;
-    while (result)
-    {
-        result = nb / 10;
-        nb = result;
-        size_nb++;
-    }
-    return (size_nb);
+	result = 1;
+	size_nb = 0;
+	while (result)
+	{
+		result = nb / 10;
+		nb = result;
+		size_nb++;
+	}
+	return (size_nb);
 }
