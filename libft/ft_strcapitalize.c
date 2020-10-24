@@ -12,9 +12,20 @@
 
 #include "libft.h"
 
-static char		*auxilial(char *str);
-
 int		g_i;
+
+static char	*auxilial(char *str)
+{
+	while (str[g_i] != ' ')
+	{
+		if (str[g_i] == '\n')
+			break ;
+		else if (str[g_i] == '-' || str[g_i] == '+')
+			break ;
+		g_i++;
+	}
+	return (str);
+}
 
 char		*ft_strcapitalize(char *str)
 {
@@ -38,19 +49,6 @@ char		*ft_strcapitalize(char *str)
 		}
 		else if (str[g_i] >= '0' && str[g_i] <= '9')
 			auxilial(str);
-		g_i++;
-	}
-	return (str);
-}
-
-static char	*auxilial(char *str)
-{
-	while (str[g_i] != ' ')
-	{
-		if (str[g_i] == '\n')
-			break ;
-		else if (str[g_i] == '-' || str[g_i] == '+')
-			break ;
 		g_i++;
 	}
 	return (str);
