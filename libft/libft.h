@@ -151,5 +151,6 @@ void			ft_putstr(const char *s);
 int				ft_isspace(int c);
 char			*ft_strjoin_n_free(char *s1, char *s2);
 void			*ft_calloc_char(size_t count, char c);
+void			ft_swap(int *a, int *b);
 
 #endif
