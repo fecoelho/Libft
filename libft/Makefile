@@ -31,7 +31,7 @@ SRCS=ft_bzero.c ft_memmove.c ft_strlen.c ft_strlcat.c ft_strlcpy.c \
 	 ft_print_width.c ft_flags.c ft_print_s.c \
 	 ft_print_di.c ft_print_p.c ft_print_u.c \
 	 ft_print_x.c ft_print_percent.c ft_itoa_base.c \
-	 ft_itoa_u.c ft_putlstr.c ft_strnew.c 
+	 ft_itoa_u.c ft_putlstr.c ft_strnew.c ft_swap.c ft_calloc_char.c ft_strjoin_n_free.c 
 
 
 OBJECTS= $(SRCS:.c=.o)
