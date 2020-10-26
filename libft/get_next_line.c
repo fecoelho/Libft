@@ -61,7 +61,7 @@ static int	ft_endoffile(char **p_line, char **line, char *buffer)
 
 static int	ft_gnl(char **line, int fd, char *buffer)
 {
-	static char	*p_line[OPEN_MAX];
+	static char	*p_line[FOPEN_MAX];
 	char		*tmp;
 	int			i;
 	int			r_byte;
