@@ -149,5 +149,7 @@ char			*ft_itoa(int n);
 char			*ft_itoa_u(unsigned int num);
 void			ft_putstr(const char *s);
 int				ft_isspace(int c);
+char			*ft_strjoin_n_free(char *s1, char *s2);
+void			*ft_calloc_char(size_t count, char c);
 
 #endif
