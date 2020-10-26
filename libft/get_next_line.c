@@ -12,88 +12,86 @@
 
 #include "libft.h"
 
-static char		*putlil(char const *str, unsigned int len)
+static int	ft_breakline(char *str, char c)
 {
-	unsigned int	i;
-	char			*line;
+	int i;
 
 	i = 0;
-	line = ft_calloc(1, len);
-	if (str)
-	{
-		while (i < len)
-		{
-			line[i] = str[i];
-			i++;
-		}
-	}
-	line[i - 1] = '\0';
-	return (line);
+	while (str[i] && str[i] != c)
+		i++;
+	if (str[i] != c)
+		return (-1);
+	return (i);
 }
 
-static int		mgk(char **str, char **line)
+static int	ft_newline(char **p_line, char **line, int i, char *buffer)
 {
-	unsigned int	len;
-	char			*temp;
+	char	*tmp;
 
-	len = 0;
-	while ((*str)[len] != '\n' && (*str)[len])
-		len++;
-	if ((*str)[len] == '\n')
+	*line = ft_substr(*p_line, 0, i);
+	tmp = ft_substr(*p_line, (i + 1), ft_strlen(*p_line) - i);
+	free(*p_line);
+	*p_line = tmp;
+	if (*p_line && *p_line[0] == '\0')
 	{
-		*line = putlil(&(*str)[0], len + 1);
-		temp = ft_strdup(&((*str)[len + 1]));
-		free(*str);
-		*str = temp;
+		free(*p_line);
+		*p_line = NULL;
 	}
-	else
-	{
-		*line = ft_strdup(*str);
-		if (*str != NULL)
-		{
-			free(*str);
-			*str = NULL;
-		}
-		return (0);
-	}
+	free(buffer);
+	buffer = NULL;
 	return (1);
 }
 
-static int		raux(char **str, char **line, int retaux, int fd)
+static int	ft_endoffile(char **p_line, char **line, char *buffer)
 {
-	if (retaux < 0)
-		return (-1);
-	else if (retaux == 0 && str[fd] == NULL)
+	if (*p_line)
 	{
-		*line = ft_strdup("");
+		*line = ft_strdup(*p_line);
+		free(*p_line);
+		*p_line = NULL;
+		free(buffer);
+		buffer = NULL;
 		return (0);
 	}
-	else
-		return (mgk(&str[fd], line));
+	*line = ft_strdup("");
+	free(buffer);
+	buffer = NULL;
+	return (0);
 }
 
-int				get_next_line(int fd, char **line)
+static int	ft_gnl(char **line, int fd, char *buffer)
 {
-	int			retaux;
-	char		buffer[BUFFER_SIZE + 1];
-	static char *str[4096];
-	char		*temp;
+	static char	*p_line[OPEN_MAX];
+	char		*tmp;
+	int			i;
+	int			r_byte;
 
-	if (fd < 0)
-		return (-1);
-	while ((retaux = (int)read(fd, &buffer, BUFFER_SIZE)) > 0)
+	if (p_line[fd] && (i = ft_breakline(p_line[fd], '\n')) >= 0)
+		return (ft_newline(&p_line[fd], line, i, buffer));
+	while ((r_byte = read(fd, buffer, BUFFER_SIZE)) > 0)
 	{
-		buffer[retaux] = '\0';
-		if (str[fd] == NULL)
-			str[fd] = ft_strdup(buffer);
+		buffer[r_byte] = '\0';
+		if (!p_line[fd])
+			p_line[fd] = ft_strdup(buffer);
 		else
 		{
-			temp = ft_strjoin(str[fd], buffer);
-			free(str[fd]);
-			str[fd] = temp;
+			tmp = ft_strjoin(p_line[fd], buffer);
+			free(p_line[fd]);
+			p_line[fd] = tmp;
 		}
-		if (ft_strchr(str[fd], '\n'))
-			break ;
+		if ((i = ft_breakline(p_line[fd], '\n')) >= 0)
+			return (ft_newline(&p_line[fd], line, i, buffer));
 	}
-	return (raux(str, line, retaux, fd));
+	return (ft_endoffile(&p_line[fd], line, buffer));
+}
+
+int			get_next_line(int fd, char **line)
+{
+	char	*buffer;
+
+	if (fd < 0 || !line || BUFFER_SIZE < 1 || read(fd, NULL, 0) < 0)
+		return (-1);
+	if (!(buffer = malloc((BUFFER_SIZE + 1) * sizeof(char *))))
+		return (0);
+	return (ft_gnl(line, fd, buffer));
 }
